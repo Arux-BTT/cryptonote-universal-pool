@@ -1,7 +1,7 @@
 {
-    "coin": "ducknote",
-    "symbol": "XDN",
-    "coinUnits": 100000000,
+    "coin": "aeoncoin",
+    "symbol": "AEON",
+    "coinUnits": 1000000000000,
     "coinDifficultyTarget": 240,
 
     "logging": {
@@ -19,19 +19,19 @@
     "poolServer": {
         "enabled": true,
         "clusterForks": "auto",
-        "poolAddress": "ddehi53dwGSBEXdhTYtga2R3fS4y9hRz4YHAsLABJpH75yUd5EDQmuL3yDBj1mG6MMeDfydY9vp4zFVVNQ99FTYq2PpsFJP2y",
+        "poolAddress": "WmsSWgtT1JPg5e3cK41hKXSHVpKW7e47bjgiKmWZkYrhSS5LhRemNyqayaSBtAQ6517eo5PtH9wxHVmM78JDZSUu2W8PqRiNs",
         "mergedMiningMinVersion": "99",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "ports": [
             {
                 "port": 3333,
-                "difficulty": 100,
+                "difficulty": 1000,
                 "desc": "Low end hardware"
             },
             {
                 "port": 5555,
-                "difficulty": 2000,
+                "difficulty": 4000,
                 "desc": "Mid range hardware"
             },
             {
@@ -47,7 +47,7 @@
             }
         ],
         "varDiff": {
-            "minDiff": 100,
+            "minDiff": 1000,
             "maxDiff": 200000,
             "targetTime": 100,
             "retargetTime": 30,
@@ -78,10 +78,10 @@
         "interval": 600,
         "maxAddresses": 50,
         "mixin": 3,
-        "transferFee": 50000000,
-        "minPayment": 1000000000,
+        "transferFee": 5000000000,
+        "minPayment": 500000000000,
         "maxTransactionAmount": 0,
-        "denomination": 1000000000
+        "denomination": 10000000000
     },
 
     "blockUnlocker": {
@@ -89,9 +89,9 @@
         "interval": 30,
         "depth": 10,
         "poolFee": 2,
-        "devDonation": 0.1,
-        "coreDevDonation": 0.1,
-        "extraFeaturesDevDonation":0.1
+        "devDonation": 0.0,
+        "coreDevDonation": 0.0,
+        "extraFeaturesDevDonation":0.0
     },
 
     "api": {
@@ -106,12 +106,12 @@
 
     "daemon": {
         "host": "127.0.0.1",
-        "port": 42081
+        "port": 11181
     },
 
     "wallet": {
         "host": "127.0.0.1",
-        "port": 8082
+        "port": 11182
     },
 
     "redis": {
